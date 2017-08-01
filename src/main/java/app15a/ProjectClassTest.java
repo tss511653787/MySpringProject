@@ -6,7 +6,12 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class ProjectClassTest {
 	@SuppressWarnings("resource")
 	public static void main(String[] args) {
+		/*
+		 * Spring的两种依赖出入方式
+		 */
 		String[] Paths = new String[] { "app15a/myFirstClass.xml" };
+		// ClassPathXmlApplicationContext 实现是尝试在类路径是加载
+		// FilePathXmlApplicatonContext 实现是尝试在文件系统中加载
 		ApplicationContext appContext = new ClassPathXmlApplicationContext(
 				Paths);
 		Product pro1 = appContext.getBean("featuredProduct", Product.class);

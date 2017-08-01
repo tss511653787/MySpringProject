@@ -12,10 +12,11 @@
 		<constructor-arg index="0" value="tss" />
 		<constructor-arg index="1" value="HE IS A NEU STU" />
 		<constructor-arg index="2" value="10.00" />
-
-		<!-- 分割 -->
 	</bean>
+
+	<!-- 分割 -->
 	<bean name="employee1" class="app15a.Employee">
+		<!-- 初始化的传值也可以是一个引用对象 用ref标记 -->
 		<property name="homeAddress" ref="simpleAddress" />
 		<property name="firstName" value="Junior" />
 		<property name="lastName" value="Moore" />
