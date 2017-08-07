@@ -2,16 +2,26 @@ package Ch2;
 
 import java.util.List;
 
+import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;
 
-//@Component("blankDisc")
-//xml中装配
+/*
+ * 使用自动注入
+ * */
+@Component("blankDisc")
+// xml中装配
 public class BlankDisc implements CompactDisc {
 	private String title;
 	private String artist;
 	private List<String> tracks;
 
 	public BlankDisc() {
+	}
+
+	public BlankDisc(String title, String artist) {
+		super();
+		this.title = title;
+		this.artist = artist;
 	}
 
 	public BlankDisc(String title, String artist, List<String> tracks) {

@@ -17,7 +17,7 @@ public class CDplayerConditon implements Condition {
 		// TODO Auto-generated method stub
 		Environment env = context.getEnvironment();
 		ConfigurableListableBeanFactory fac = context.getBeanFactory();
-		return fac.containsBean("compactDisc");
+		return fac.containsBean("SgtPepperDisc");
 	}
 
 }
