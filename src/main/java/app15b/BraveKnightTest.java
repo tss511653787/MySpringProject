@@ -1,7 +1,9 @@
 package app15b;
+import org.junit.Test;
+
 import static org.mockito.Mockito.*;
 
-import org.junit.Test;
+
 public class BraveKnightTest {
 
   @Test
